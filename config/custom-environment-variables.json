@@ -1,0 +1,6 @@
+{
+    "appSecret": "APP_NAME",
+    "mail": {
+        "password": "app_password"
+    }
+}
