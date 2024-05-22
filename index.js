@@ -9,6 +9,7 @@ const auth = require("./middleware/authenticate");
 const validator = require("./middleware/validate");
 const home = require("./routes/home");
 const course = require("./routes/course");
+const user = require("./routes/user");
 const express = require("express");
 const morgan = require("morgan");
 const app = express();
@@ -28,6 +29,7 @@ app.use(
 
 app.use(validator);
 app.use("/api/courses", course);
+app.use("/api/user", user);
 app.use("/", home);
 
 const port = process.env.PORT || 3200;
